@@ -1,0 +1,48 @@
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin wordBreak {
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+@mixin textHidden {
+    text-indent: -9999%;
+    font-size: 0;
+}
+
+
+@mixin bullet($selector: before, $position: null, $top: null, $right: null, $bottom: null, $left: null, $width: null, $height: null) {
+    /// ❗ 필수값
+    /// $selector => 미지정시 before
+
+    /// ❓ 선택값
+    /// 값 지정 시 지시자 필수
+    /// $position, $top, $right, $bottom, $left
+
+    position: relative;
+
+    &:#{$selector} {
+        @if $position == null {
+            display: inline-block;
+            vertical-align: middle;
+        } @else {
+            display: block;
+        }
+        position: $position;
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+        width: $width;
+        height: $height;
+        content: "";
+        @content;
+    }
+}

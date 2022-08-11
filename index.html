@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/live.css">
+    <title>웨비나 샘플</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="section_vdo">
+                <div class="vdo_area">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0uLz6IUkxP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="txt_area">
+                    <div class="txt_wrap">
+                        <div class="tit">
+                            <h1>2021 SIA 「일반식품의 기능성 표시제도 활용 솔루션」</h1>
+                            <span>LIVE</span>
+                        </div>
+                        <span class="date">2022.07.06</span>
+                    </div>
+                    <a href="javascript:void(0);">문의하기</a>
+                </div>
+            </div>
+            <div class="section_reply">
+                <div class="write_area">
+                    <div class="write_info">
+                        <p class="writer">글로리아</p>
+                        <div>
+                            <button type="button"><span class="ir">새로고침</span></button>
+                            <a href="javascript:void(0);" id="btnMycomment">My Comments</a>
+                        </div>
+                    </div>
+                    <div class="write_bottom">
+                        <textarea placeholder="댓글을 입력해주세요." id="newReply"></textarea>
+                        <div class="list">
+                            <input type="checkbox" id="secretReply">
+                            <label for="secretReply">비밀댓글</label>
+                            <button type="button" id="submitNew" data-btn="new">등록</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="reply_area">
+                    <div class="reply" data-who="others" data-reply="parentReply">
+                        <div class="top">
+                            <div class="info">
+                                <p class="writer">김똥깨</p>
+                                <div class="date">
+                                    <span>22.07.25</span>
+                                    <span>12:20</span>
+                                </div>
+                                <div class="btn_wrap">
+                                    <button type="button" class="btn_more" data-btn="parentReply"><span class="ir">더보기</span></button>
+                                    
+                                    <ul class="btn_list">
+                                        <li><a href="javascript:void(0);" data-btn="edit">수정하기</a></li>
+                                        <li><a href="javascript:void(0);" data-btn="delete">삭제하기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bot_inner">
+                                <div class="board">
+                                    <p>(내가 아닌 남이 작성한 댓글~~) 안녕하세요 김똥깨입니다!! 언제 웨비나 시작하는건가요? </p>
+                                    <div class="respond_btn">
+                                        <a href="javascript:void(0);" class="btn_comment">답글<span class="cmm_cnt">1</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="reply_child">
+                                <div class="reply_editer">
+                                    <textarea></textarea>
+                                    <button type="button" data-btn="reReplySubmit">등록</button>
+                                </div>
+                                <div class="comment_wrap">
+                                    <div class="reply" data-who="others" data-reply="childReply">
+                                        <div class="top">
+                                            <div class="info">
+                                                <p class="writer">이아무개</p>
+                                                <div class="date">
+                                                    <span>22.07.25</span>
+                                                    <span>12:55</span>
+                                                </div>
+                                                <div class="btn_wrap">
+                                                    <button type="button" class="btn_more" data-btn="childReply"><span class="ir">더보기</span></button>
+                                                    
+                                                    <ul class="btn_list">
+                                                        <li><a href="javascript:void(0);" data-btn="edit">수정하기</a></li>
+                                                        <li><a href="javascript:void(0);" data-btn="delete">삭제하기</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="bot_inner">
+                                                <div class="board">
+                                                    <p>(내가 아닌 남이 작성한 댓글~~) 안녕하세요 김똥깨님!! 김똥깨님도 아직 기다리고 계시군요ㅠㅠ뭔가 이상합니다ㅠㅠ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="reply" data-who="me" data-reply="parentReply">
+                        <div class="top">
+                            <div class="info">
+                                <p class="writer">글로리아</p>
+                                <div class="date">
+                                    <span>22.07.25</span>
+                                    <span>10:35</span>
+                                </div>
+                                <div class="btn_wrap">
+                                    <button type="button" class="btn_more" data-btn="parentReply"><span class="ir">더보기</span></button>
+                                    
+                                    <ul class="btn_list">
+                                        <li><a href="javascript:void(0);" data-btn="edit">수정하기</a></li>
+                                        <li><a href="javascript:void(0);" data-btn="delete">삭제하기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bot_inner">
+                                <div class="board">
+                                    <p>안녕하세요. 제가 작성한 댓글입니다~~</p>
+                                    <div class="respond_btn">
+                                        <a href="javascript:void(0);" class="btn_comment">답글<span class="cmm_cnt"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="reply_child">
+                                <div class="reply_editer">
+                                    <textarea></textarea>
+                                    <button type="button" data-btn="reReplySubmit">등록</button>
+                                </div>
+                                <div class="comment_wrap"></div>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="reply" data-who="others" data-reply="parentReply">
+                        <div class="top">
+                            <div class="info">
+                                <p class="writer">홍길동</p>
+                                <div class="date">
+                                    <span>22.07.25</span>
+                                    <span>10:17</span>
+                                </div>
+                                <div class="btn_wrap">
+                                    <button type="button" class="btn_more" data-btn="parentReply"><span class="ir">더보기</span></button>
+                                    
+                                    <ul class="btn_list">
+                                        <li><a href="javascript:void(0);" data-btn="edit">수정하기</a></li>
+                                        <li><a href="javascript:void(0);" data-btn="delete">삭제하기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bot_inner">
+                                <div class="board">
+                                    <p>(내가 아닌 남이 작성한 댓글~~) 안녕하세요. 홍길동입니다. 그 동안 웨비나 오랜 시간 기다려왔습니다. 기대가 큽니다!</p>
+                                    <div class="respond_btn">
+                                        <a href="javascript:void(0);" class="btn_comment">답글<span class="cmm_cnt">2</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="reply_child">
+                                <div class="reply_editer">
+                                    <textarea></textarea>
+                                    <button type="button" data-btn="reReplySubmit">등록</button>
+                                </div>
+                                <div class="comment_wrap">
+                                    <div class="reply" data-who="me" data-reply="childReply">
+                                        <div class="top">
+                                            <div class="info">
+                                                <p class="writer">글로리아</p>
+                                                <div class="date">
+                                                    <span>22.07.25</span>
+                                                    <span>11:20</span>
+                                                </div>
+                                                <div class="btn_wrap">
+                                                    <button type="button" class="btn_more" data-btn="childReply"><span class="ir">더보기</span></button>
+                                                    
+                                                    <ul class="btn_list">
+                                                        <li><a href="javascript:void(0);" data-btn="edit">수정하기</a></li>
+                                                        <li><a href="javascript:void(0);" data-btn="delete">삭제하기</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="bot_inner">
+                                                <div class="board">
+                                                    <p>반갑습니다! 홍길동님도 기대하고 계셨군요!!!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply" data-who="others" data-reply="childReply">
+                                        <div class="top">
+                                            <div class="info">
+                                                <p class="writer">김삼양</p>
+                                                <div class="date">
+                                                    <span>22.07.25</span>
+                                                    <span>12:05</span>
+                                                </div>
+                                                <div class="btn_wrap">
+                                                    <button type="button" class="btn_more" data-btn="childReply"><span class="ir">더보기</span></button>
+                                                    
+                                                    <ul class="btn_list">
+                                                        <li><a href="javascript:void(0);" data-btn="edit">수정하기</a></li>
+                                                        <li><a href="javascript:void(0);" data-btn="delete">삭제하기</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="bot_inner">
+                                                <div class="board">
+                                                    <p>안녕하세요 반갑습니다~다들 웨비나 기대하고 계시군요!! 저도 기대하고 있습니다!!!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="dim"></div>
+            <div class="pop_inner">
+                <div class="pop_top">
+                    <h2>My Comments</h2>
+                    <button type="button" class="btn_close"><span class="ir">닫기</span></button>
+                </div>
+                <div class="reply_area">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="resources/js/live.js"></script>
+</body>
+</html>
